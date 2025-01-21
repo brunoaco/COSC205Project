@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<script>
+		function actionButton() {
+			alert("do something");
+		}
+	</script>
+    <title>Resume Upload</title>
+    <style><!--
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"], input[type="file"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }-->
+</style>
+</head>
+<body>
+    <div><!--<div class="container">-->
+        <h1>Filter Resume</h1>
+        <form action="upload_resume.php" method="post" enctype="multipart/form-data">
+            <!--<label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" required>
+			
+			<label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+			
+			<label for="work_area">Choose an area of work:</label>
+			<select id="work_area" name="work_area">
+				<option value="it">Information Technology (IT)</option>
+				<option value="healthcare">Healthcare</option>
+				<option value="finance">Finance</option>
+				<option value="marketing">Marketing & Advertising</option>
+				<option value="education">Education</option>
+				<option value="engineering">Engineering</option>
+				<option value="retail">Retail</option>
+				<option value="real_estate">Real Estate</option>
+				<option value="human_resources">Human Resources</option>
+				<option value="manufacturing">Manufacturing</option>
+				<option value="art_design">Art & Design</option>
+				<option value="legal">Legal</option>
+				<option value="hospitality">Hospitality</option>
+				<option value="environmental_science">Environmental Science</option>
+				<option value="public_relations">Public Relations</option>
+			</select>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+			-->
+
+            <input type="submit" value="Upload">
+</form>
+		<table border=1>
+			<header>
+				
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Address</th>
+					<th>Resume</th>
+					<th>Action</th>
+				</tr>
+			</header>
+			<body>
+
+				<tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>123 Maple St, Springfield, IL</td>
+					<td>john_doe_resume.pdf</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Jane</td>
+					<td>Smith</td>
+					<td>456 Oak St, Chicago, IL</td>
+					<td>jane_smith_resume.docx</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Michael</td>
+					<td>Johnson</td>
+					<td>789 Pine St, Houston, TX</td>
+					<td>michael_j_resume.pdf</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Emma</td>
+					<td>Brown</td>
+					<td>101 Cedar St, Seattle, WA</td>
+					<td> emma_brown_resume.doc</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> William</td>
+					<td> Davis</td>
+					<td> 202 Birch St, Denver, CO</td>
+					<td> william_davis.pdf</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Olivia</td>
+					<td> Wilson</td>
+					<td> 303 Elm St, Miami, FL</td>
+					<td> olivia_w_resume.docx</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> James</td>
+					<td> Anderson</td>
+					<td> 404 Walnut St, Boston, MA</td>
+					<td> james_a_resume.pdf</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Isabella</td>
+					<td> Moore</td>
+					<td> 505 Chestnut St, Dallas, TX</td>
+					<td> isabella_m_resume.docx</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Benjamin</td>
+					<td> Taylor</td>
+					<td> 606 Linden St, Atlanta, GA</td>
+					<td> ben_t_resume.pdf</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Ava</td>
+					<td> Martin</td>
+					<td> 707 Ash St, San Francisco, CA</td>
+					<td> ava_m_resume.doc</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Lucas</td>
+					<td> Lee</td>
+					<td> 808 Spruce St, Philadelphia, PA</td>
+					<td> lucas_l_resume.pdf</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Sophia</td>
+					<td> Scott</td>
+					<td> 909 Redwood St, Portland, OR</td>
+					<td> sophia_s_resume.doc</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Henry</td>
+					<td> Walker</td>
+					<td> 1010 Sycamore St, Austin, TX</td>
+					<td> henry_w_resume.pdf</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Mia</td>
+					<td> Adams</td>
+					<td> 1111 Dogwood St, Phoenix, AZ</td>
+					<td> mia_adams_resume.docx</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Alexander</td>
+					<td> Gonzalez</td>
+					<td> 1212 Cherry St, Minneapolis, MN</td>
+					<td> alex_g_resume.pdf</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Charlotte</td>
+					<td> Perez</td>
+					<td> 1313 Hickory St, Salt Lake City, UT</td>
+					<td> charlotte_perez.docx</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Daniel</td>
+					<td> Thompson</td>
+					<td> 1414 Maplewood St, Orlando, FL</td>
+					<td> daniel_t_resume.pdf</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Amelia</td>
+					<td> Garcia</td>
+					<td> 1515 Sequoia St, Oklahoma City, OK</td>
+					<td> amelia_g_resume.doc</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Matthew</td>
+					<td> Martinez</td>
+					<td> 1616 Willow St, Detroit, MI</td>
+					<td> matthew_m_resume.pdf</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				<tr>
+					<td> Harper</td>
+					<td> White</td>
+					<td> 1717 Poplar St, Kansas City, MO</td>
+					<td> harper_w_resume.docx</td>
+					<td><input type="button" value="edit" onclick="actionButton()"/></td>
+				</tr>
+				
+
+			</body>
+			<footer>
+				<tr>
+					<td colspan=4 align="right">subtotal</td>
+					<td>20</td>
+				</tr>
+			</footer>
+		</table>
+        <footer>
+            &copy; 2025 COSC205Project. All rights reserved.
+</footer>
+</div>
+</body>
+</html>
