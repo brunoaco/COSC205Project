@@ -13,4 +13,9 @@ button{
 
 #employer{
 	margin-left: 750px;
+	background-image: url("employer.jpg");
+}
+
+#student{
+	background-image: url("student.jpg");
 }
