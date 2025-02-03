@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="home_page_CSS.css">
-	<head>
-	<body>
-		<h1>Welcome to the Student Job board!</h1>
-		<h2>Please select your role</h2>
-		<button name="employer" id="employer" onclick="window.location.href ='job_listing_HTML.html'"></button>
-		<button name="student" id="student" onclick="window.location.href='resume.html'"></button>
-	</body>
+<head>
+    <link rel="stylesheet" href="Home_page_CSS.css">
+</head>
+<body>
+    <h1>Welcome to the Student Job board!</h1>
+    <h2>Please select your role</h2>
+    <div class="container">
+        <div class="item">
+            <button name="employer" id="employer" onclick="window.location.href='joblisting.html'"></button>
+            <p id="listing">To upload a job listing</p>
+        </div>
+        <div class="item">
+            <button name="student" id="student" onclick="window.location.href='resume.html'"></button>
+            <p id="resume">To upload a resume</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2025 COSC205Project. All rights reserved.</p>
+    </footer>
+</body>
 </html>
