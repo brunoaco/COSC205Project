@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<body style="margin: 0">
-		<header style="background-color:grey; height: 50px">
+	 <link rel="stylesheet" href="Job_listing_CSS.css">
+		<body>
+		<header>
 			<nav>
 				<a href="home_page_HTML.html">Back to home</a>
 			</nav>
 		</header>
 		<h1>Job Listing Form</h1>
-		<div style="border: 1px solid black; width:650px; padding:10px; padding-left:50px">
+		<div class="listing" style="border: 1px solid black;">
 			<form>
 				Business Name: <input type="text" id = "businessName"> <br><br>
 				Position:<input type="text" id = "Position"><br><br>
 				Work Experience (years):<input type = "number" id = "experience"><br><br>
-				Pay Rate:<input type="number" id="minPay"> to <input type="number" id = "maxPay"><br><br>Description:<br>
+				Pay Rate minumum:<input type="number" id="minPay"> Pay rate maximum: <input type="number" id = "maxPay"><br><br>Description:<br>
 				<textarea id = "desc" rows="25" cols="75"></textarea>
 			</form>
+			<div class="container">
 			<button name="submit" id="submit">Submit Form</button>
+			</div>
 		</div>
+		 <footer class="footer">
+        <p>© 2025 COSC205Project. All rights reserved.</p>
+		 </footer>
 		</body>
 	<head>
 </html>
