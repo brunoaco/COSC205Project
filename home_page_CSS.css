@@ -1,9 +1,28 @@
+*{
+	font-family: Tahoma;
+	margin: 0;
+}
+
+nav{
+	text-align: center;
+}
+
 h1{
-	padding-left: 750px;
+	text-align: center;
+	padding: 20px;
 }
 
 h2{
-	padding-left: 850px;
+	text-align: center;
+}
+body{
+	background-color: #F5F5DC
+}
+.container{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
 }
 
 button{
@@ -12,10 +31,30 @@ button{
 }
 
 #employer{
-	margin-left: 750px;
 	background-image: url("employer.jpg");
 }
 
 #student{
 	background-image: url("student.jpg");
+}
+
+#listing{
+	padding-left: 20px;
+	color: #333
+}
+
+#resume{
+	padding-left: 20px;
+	color: #333;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: grey;
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
 }
