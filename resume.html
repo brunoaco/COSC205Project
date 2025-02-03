@@ -1,75 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Resume_CSS.css">
     <title>Resume Upload</title>
-    <style>
-
-    </style>
 </head>
 <body style="margin:0">
-		<header style="background-color:grey; height: 50px">
-			<nav>
-				<a href="home_page_HTML.html">Back to home</a>
-			</nav>
-		</header>
-    <div class="container">
+    <header style="background-color:grey; height: 50px">
+        <nav>
+            <a href="home_page_HTML.html">Back to home</a>
+        </nav>
+    </header>
         <h1>Upload Your Resume</h1>
         <form action="upload_resume.php" method="post" enctype="multipart/form-data">
-            <table border=1>
-				<header>
-					<tr><th colspan=2>Upload Your Resume</th></tr>
-				</header>
-				<body>
-					<tr>
-						<td><label for="name">Full Name:</label></td>
-						<td><input type="text" id="name" name="name" required></td>
-					</tr>
-					<tr>
-						<td><label for="email">Email Address:</label></td>
-						<td><input type="text" id="email" name="email" required></td>
-					</tr>
-					<tr>
-						<td><label for="address">Address:</label></td>
-						<td><input type="text" id="address" name="address" required></td>
-					</tr>
-					<tr>
-						<td><label for="work_area">Choose an area of work:</label></td>
-						<td>
-						<select id="work_area" name="work_area">
-							<option value="it">Information Technology (IT)</option>
-							<option value="healthcare">Healthcare</option>
-							<option value="finance">Finance</option>
-							<option value="marketing">Marketing & Advertising</option>
-							<option value="education">Education</option>
-							<option value="engineering">Engineering</option>
-							<option value="retail">Retail</option>
-							<option value="real_estate">Real Estate</option>
-							<option value="human_resources">Human Resources</option>
-							<option value="manufacturing">Manufacturing</option>
-							<option value="art_design">Art & Design</option>
-							<option value="legal">Legal</option>
-							<option value="hospitality">Hospitality</option>
-							<option value="environmental_science">Environmental Science</option>
-							<option value="public_relations">Public Relations</option>
-						</select></td>
-					</tr>
-					<tr>
-						<td><label for="resume">Upload Resume:</label></td>
-						<td><input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required></td>
-					</tr>
-				</body>
-				<footer>
-					<tr>
-						<td colspan=2 align="center"><input type="submit" value="Upload"></td>
-					</tr></footer>
-			</table>
-			
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="2">Upload Your Resume</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="name">Full Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email Address:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address:</label></td>
+                        <td><input type="text" id="address" name="address" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="work_area">Choose an area of work:</label></td>
+                        <td>
+                            <select id="work_area" name="work_area">
+                                <option value="it">Information Technology (IT)</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance</option>
+                                <option value="marketing">Marketing & Advertising</option>
+                                <option value="education">Education</option>
+                                <option value="engineering">Engineering</option>
+                                <option value="retail">Retail</option>
+                                <option value="real_estate">Real Estate</option>
+                                <option value="human_resources">Human Resources</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="art_design">Art & Design</option>
+                                <option value="legal">Legal</option>
+                                <option value="hospitality">Hospitality</option>
+                                <option value="environmental_science">Environmental Science</option>
+                                <option value="public_relations">Public Relations</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="resume">Upload Resume:</label></td>
+                        <td><input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" align="center"><input type="submit" value="Upload" class="upload"></td>
+                    </tr>
+                </tfoot>
+            </table>
         </form>
-        <footer>
-            &copy; 2025 COSC205Project. All rights reserved.
-        </footer>
-    </div>
+       <footer class="footer">
+        <p>© 2025 COSC205Project. All rights reserved.</p>
+       </footer>
 </body>
 </html>
